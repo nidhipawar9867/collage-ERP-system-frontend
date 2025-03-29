@@ -21,7 +21,7 @@ const StudentDashboard = () => {
                 <div className="flex-1 p-6">
                     <h2 className="text-xl font-semibold mb-4">Welcome, Student!</h2>
                     <p className="text-gray-700">Here is your dashboard content.</p>
-                    <form action="http://localhost:5001/students/upload"
+                    <form action="http://localhost:27017/students/upload"
                         method="post"
                         enctype="multipart/form-data">
                         <input
@@ -38,7 +38,7 @@ const StudentDashboard = () => {
                     <div className="flex flex-col items-center">
                         <div className="w-24 h-24 rounded-full bg-gray-300 mb-4">
                             <img
-                                src={"http://localhost:5001/images/" + loggedInStudent.profilePhoto}
+                                src={"http://localhost:27017/images/" + loggedInStudent.profilePhoto}
                                 alt=""
 
                             />
